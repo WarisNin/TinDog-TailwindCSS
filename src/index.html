@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinDog</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5249be3d4c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title" class="bg-[#ff4c68] w-full z-10 relative">
+
+    <!-- Nav Bar -->
+    <div class="px-20 py-12 xl:py-0 xl:px-72">
+      <nav class="xl:py-16 xl:flex xl:items-center xl:justify-between">
+
+        <div class="flex justify-between justify-items-center">
+          <a class="text-4xl text-white font-tindog font-medium" href="#">tindog</a>
+          <!-- <button class="px-4 py-1 border border-gray-100/40 rounded-md focus:border-4 duration-100">
+            <i name="menu" onclick="Menu(this)" class="text-opacity-75 text-zinc-300 text-2xl fa-solid fa-bars">
+            </i>
+          </button> -->
+        </div>
+
+        <ul class="xl:flex xl:items-center text-gray-300 text-xl font-medium gap-8 xl:z-auto">
+          <li class="mt-4 px-3 py-2 xl:mt-0 hover:text-gray-100 duration-200">
+            <a href="#footer">Contact</a>
+          </li>
+          <li class="px-3 py-2 hover:text-gray-100 duration-200">
+            <a href="#pricing">Pricing</a>
+          </li>
+          <li class="px-3 py-2 hover:text-gray-100 duration-200">
+            <a href="#cta">Download</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- <script>
+        const Menu = e => {
+          let list = document.querySelector('ul');
+
+          e.name === "menu" ? (list.classList.add("top-[80px]"), list.classList.add("opacity-100")) : (list.classList.remove("top-[80px]"), list.classList.remove("opacity-100"))
+        }
+      </script> -->
+
+      <!-- Title -->
+      <div class="xl:flex xl:text-left">
+        <div class="pt-8 xl:mr-96 xl:pr-96">
+          <h1 class="grid-cols-2 text-6xl text-white font-black leading-normal">Meet new and
+            interesting
+            dogs nearby.
+          </h1>
+          <div class="flex mt-10 mb-10 xl:mb-40 text-white text-xl">
+            <button class="px-4 py-2 border rounded-lg border-black bg-gray-900" type="button"><i
+                class="mr-1 fa-brands fa-apple"></i>Download</button>
+            <button class="px-4 py-2 mx-6 border rounded-lg hover:bg-white hover:text-black duration-100"
+              type="button"><i class="mr-1 fa-brands fa-google-play"></i>Download</button>
+          </div>
+        </div>
+
+        <img class="pb-10 w-80 xl:pb-0 xl:top-52 xl:right-96 xl:rotate-[25deg] xl:absolute xl:z-20"
+          src="assets/iphone6.png" alt="iphone-mockup">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Features -->
+  <section class="bg-white backdrop:w-full z-30 relative" id="features">
+
+    <div class="p-8 lg:p-32 text-center lg:flex lg:justify-between lg:gap-8 whitespace-normal">
+      <div class="lg:ml-48">
+        <i class="fa-solid fa-circle-check fa-4x text-[#ef8172] hover:text-[#ff4c68] duration-75 my-6"></i>
+        <h3 class="font-black text-2xl mb-2">Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+      <div class="lg:mx-20">
+        <i class="fa-solid fa-bullseye fa-4x text-[#ef8172] hover:text-[#ff4c68] duration-75 my-6"></i>
+        <h3 class="font-black text-2xl mb-2">Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="lg:mr-52">
+        <i class="fa-solid fa-heart fa-4x text-[#ef8172] hover:text-[#ff4c68] duration-75 my-6"></i>
+        <h3 class="font-black text-2xl mb-2">Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-[#ef8172] w-full">
+    <div class="px-[15%] py-20 text-center">
+      <h2 class="text-white text-5xl font-black leading-normal">I no longer have to sniff other dogs for love. I've
+        found the hottest
+        Corgi on TinDog. Woof.</h2>
+      <div class="flex items-center justify-center">
+        <img class="m-5 w-24 rounded-full" src="assets/dog-img.jpg" alt="dog-profile">
+        <em class="text-white text-2xl">Pebbles, New York</em>
+      </div>
+    </div>
+
+    <!-- <div class="px-72 py-20 text-center">
+      <h2 class="text-white text-5xl font-black leading-normal">My dog used to be so lonely, but with TinDog's help,
+        they've found the love of their
+        life. I think.</h2>
+      <div class="flex items-center justify-center">
+        <img class="m-5 w-24 rounded-full" src="assets/lady-img.jpg" alt="lady-profile">
+        <em class="text-white text-2xl">Beverly, Illinois</em>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- Press -->
+  <section id="press" class="bg-[#ef8172] w-full relative">
+    <figure class="px-28 flex items-center justify-center gap-10">
+      <img class="w-2/12 mt-5 mx-5 mb-12" src="assets/techcrunch.png" alt="tc-logo">
+      <img class="w-2/12 mt-5 mx-5 mb-12" src="assets/tnw.png" alt="tnw-logo">
+      <img class="w-2/12 mt-5 mx-5 mb-12" src="assets/bizinsider.png" alt="biz-insider-logo">
+      <img class="w-2/12 mt-5 mx-5 mb-12" src="assets/mashable.png" alt="mashable-logo">
+    </figure>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="bg-white w-full p-24 relative">
+    <div class="items-center justify-center text-center">
+      <h2 class="text-5xl font-black leading-normal">A Plan for Every Dog's Needs</h2>
+      <p class="mb-14">Simple and affordable price plans for your and your dog.</p>
+
+      <div class="xl:flex xl:gap-16 justify-center">
+        <div class="flex-col pb-8">
+          <h3 class="py-3 border border-gray-300 rounded-t-lg font-black text-3xl bg-gray-50">Chihuahua</h3>
+          <div class="flex-col border-gray-300 border rounded-b-lg p-4 leading-normal">
+            <h2 class="font-black text-5xl leading-normal">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button
+              class="px-12 py-2 lg:px-48 md:px-36 sm:px-24 border rounded-lg border-black text-xl hover:bg-gray-900 hover:text-white duration-100"
+              type="button">Sign
+              Up</button>
+          </div>
+        </div>
+
+        <div class="flex-col pb-8">
+          <h3 class="py-3 border border-gray-300 rounded-t-lg font-black text-3xl bg-gray-50">Labrador</h3>
+          <div class="flex-col border border-gray-300 rounded-b-lg p-4">
+            <h2 class="font-black text-5xl leading-normal">$15 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button
+              class="px-12 py-2 lg:px-48 md:px-36 sm:px-24 border rounded-lg border-black bg-gray-900 text-xl text-white"
+              type="button">Sign
+              Up</button>
+          </div>
+        </div>
+
+        <div class="flex-col pb-8">
+          <h3 class="py-3 border border-gray-300 rounded-t-lg font-black text-3xl bg-gray-50">Mastiff</h3>
+          <div class="flex-col border border-gray-300 rounded-b-lg p-4">
+            <h2 class="font-black text-5xl leading-normal">$29 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button
+              class="px-12 py-2 lg:px-48 md:px-36 sm:px-24 border rounded-lg border-black bg-gray-900 text-xl text-white"
+              type="button">Sign
+              Up</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="cta" class="bg-[#ff4c68] w-full relative">
+    <div class="text-center p-36">
+      <h3 class="font-black text-white text-6xl">Find the True Love of Your Dog's Life Today.</h3>
+      <div class="my-20 text-white text-xl">
+        <button class="px-4 py-2 border rounded-lg border-black bg-gray-900 mx-4" type="button"><i
+            class="mr-1 fa-brands fa-apple"></i>Download</button>
+        <button class="px-4 py-2 mt-8 border rounded-lg mx-4 hover:bg-white hover:text-black duration-100"
+          type="button"><i class="mr-1 fa-brands fa-google-play"></i>Download</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white w-full p-10 relative" id="footer">
+    <div class="text-center lg:p-24">
+      <div class="flex justify-center gap-1">
+        <button class="border-black hover:border rounded-md" type="button"><i
+            class="m-6 fa-brands fa-twitter fa-xl"></i></button>
+        <button class="border-black hover:border rounded-md" type="button"><i
+            class="m-6 fa-brands fa-facebook fa-xl"></i></button>
+        <button class="border-black hover:border rounded-md" type="button"><i
+            class="m-6 fa-brands fa-instagram fa-xl"></i></button>
+        <button class="border-black hover:border rounded-md" type="button"><i
+            class="m-6 fa-solid fa-envelope fa-xl"></i></button>
+      </div>
+      <p class="mt-6">&copy; Copyright 2022 TinDog</p>
+      <p>Created by Waris Ninkaesorn 😎 (Using Tailwind CSS)</p>
+    </div>
+  </footer>
+</body>
+
+</html>

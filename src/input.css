@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply text-gray-900;
+		font-family: "Montserrat", sans-serif;
+	}
+
+	p {
+		@apply text-[#8f8f8f];
+		@apply p-2;
+	}
+}
